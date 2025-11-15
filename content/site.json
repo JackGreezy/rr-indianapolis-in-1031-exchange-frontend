@@ -1,0 +1,16 @@
+{
+  "company": "1031 Exchange Indianapolis",
+  "phone": "",
+  "phoneDigits": "",
+  "mainCity": "Indianapolis",
+  "state": "IN",
+  "services": [],
+  "servicesNav": [],
+  "locationsNav": [],
+  "extraLinks": [
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
+}

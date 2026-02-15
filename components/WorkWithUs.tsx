@@ -21,7 +21,7 @@ export default function WorkWithUs() {
       {/* Left - Image */}
       <div className="relative min-h-[450px] lg:min-h-[500px]">
         <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80"
+          src="/neighborhoods/meridian-hills/meridian-hills-in.avif"
           alt="Modern property"
           className="absolute inset-0 w-full h-full object-cover"
         />

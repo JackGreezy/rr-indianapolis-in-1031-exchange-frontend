@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
   return (
@@ -39,6 +40,7 @@ export default function ContactPage() {
     <>
       <Header />
       <main className="pt-20">
+        <Breadcrumb items={[{ label: "Contact" }]} />
         {/* Hero */}
         <section className="py-24 bg-teal">
           <div className="container text-center">
@@ -84,7 +86,7 @@ export default function ContactPage() {
                           type="text"
                           id="firstName"
                           required
-                          className="w-full px-4 py-3 bg-cream border-0 text-heading focus:ring-2 focus:ring-teal outline-none"
+                          className="w-full px-4 py-3 bg-cream border border-gray-300 text-heading focus:ring-2 focus:ring-teal focus:border-teal outline-none"
                           value={formData.firstName}
                           onChange={(e) =>
                             setFormData({ ...formData, firstName: e.target.value })
@@ -102,7 +104,7 @@ export default function ContactPage() {
                           type="text"
                           id="lastName"
                           required
-                          className="w-full px-4 py-3 bg-cream border-0 text-heading focus:ring-2 focus:ring-teal outline-none"
+                          className="w-full px-4 py-3 bg-cream border border-gray-300 text-heading focus:ring-2 focus:ring-teal focus:border-teal outline-none"
                           value={formData.lastName}
                           onChange={(e) =>
                             setFormData({ ...formData, lastName: e.target.value })
@@ -123,7 +125,7 @@ export default function ContactPage() {
                           type="email"
                           id="email"
                           required
-                          className="w-full px-4 py-3 bg-cream border-0 text-heading focus:ring-2 focus:ring-teal outline-none"
+                          className="w-full px-4 py-3 bg-cream border border-gray-300 text-heading focus:ring-2 focus:ring-teal focus:border-teal outline-none"
                           value={formData.email}
                           onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
@@ -140,7 +142,7 @@ export default function ContactPage() {
                         <input
                           type="tel"
                           id="phone"
-                          className="w-full px-4 py-3 bg-cream border-0 text-heading focus:ring-2 focus:ring-teal outline-none"
+                          className="w-full px-4 py-3 bg-cream border border-gray-300 text-heading focus:ring-2 focus:ring-teal focus:border-teal outline-none"
                           value={formData.phone}
                           onChange={(e) =>
                             setFormData({ ...formData, phone: e.target.value })
@@ -158,7 +160,7 @@ export default function ContactPage() {
                       </label>
                       <select
                         id="propertyType"
-                        className="w-full px-4 py-3 bg-cream border-0 text-heading focus:ring-2 focus:ring-teal outline-none"
+                        className="w-full px-4 py-3 bg-cream border border-gray-300 text-heading focus:ring-2 focus:ring-teal focus:border-teal outline-none"
                         value={formData.propertyType}
                         onChange={(e) =>
                           setFormData({ ...formData, propertyType: e.target.value })
@@ -189,7 +191,7 @@ export default function ContactPage() {
                         id="message"
                         required
                         rows={6}
-                        className="w-full px-4 py-3 bg-cream border-0 text-heading focus:ring-2 focus:ring-teal outline-none resize-none"
+                        className="w-full px-4 py-3 bg-cream border border-gray-300 text-heading focus:ring-2 focus:ring-teal focus:border-teal outline-none resize-none"
                         value={formData.message}
                         onChange={(e) =>
                           setFormData({ ...formData, message: e.target.value })

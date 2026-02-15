@@ -39,7 +39,7 @@ export default function About() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80"
+              src="/neighborhoods/downtown/downtown-in.jpg"
               alt="Indianapolis architecture and downtown"
               className="w-full h-full object-cover"
             />

@@ -22,74 +22,62 @@ const propertyTypes = [
   {
     id: "nnn",
     name: "NNN Properties",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    image: "/property-types/nnn/nnn-in.jpg",
   },
   {
     id: "retail",
     name: "Retail",
-    image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+    image: "/property-types/retail/retail-in.jpg",
   },
   {
     id: "office",
     name: "Office Buildings",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: "/property-types/office/office-in.jpg",
   },
   {
     id: "industrial",
     name: "Industrial",
-    image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    image: "/property-types/industrial/industrial-in.webp",
   },
   {
     id: "multifamily",
     name: "Multifamily",
-    image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+    image: "/property-types/multifamily/multifamily-in.jpg",
   },
   {
     id: "medical",
     name: "Medical Office",
-    image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+    image: "/property-types/medical/medical-in.jpg",
   },
   {
     id: "hospitality",
     name: "Hospitality",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-  },
-  {
-    id: "student-housing",
-    name: "Student Housing",
-    image:
-      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
-  },
-  {
-    id: "self-storage",
-    name: "Self-Storage",
-    image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
-  },
-  {
-    id: "senior-living",
-    name: "Senior Living",
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    image: "/property-types/hospitality/hospitality-in.jpg",
   },
   {
     id: "mixed-use",
     name: "Mixed-Use",
-    image:
-      "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80",
+    image: "/property-types/mixed-use/mixed-use-in.webp",
+  },
+  {
+    id: "self-storage",
+    name: "Self-Storage",
+    image: "/property-types/self-storage/self-storage-in.jpg",
   },
   {
     id: "land",
     name: "Land",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
+    image: "/property-types/land/land-in.avif",
+  },
+  {
+    id: "net-lease",
+    name: "Single-Tenant Net Lease",
+    image: "/property-types/net-lease/net-lease-in.webp",
+  },
+  {
+    id: "automotive",
+    name: "Automotive & Service",
+    image: "/property-types/automotive/automotive-in.webp",
   },
 ];
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
@@ -15,11 +16,10 @@ function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
   );
 }
 
-const serviceData: Record<string, { 
-  name: string; 
-  description: string; 
-  details: string[]; 
-  image: string;
+const serviceData: Record<string, {
+  name: string;
+  description: string;
+  details: string[];
   longDescription: string;
   benefits: string[];
   process: string[];
@@ -29,7 +29,7 @@ const serviceData: Record<string, {
     name: "Delayed Exchange",
     description: "The most common type of 1031 exchange, where you sell your relinquished property first and then acquire replacement property within the IRS-mandated timeframes.",
     details: ["45 days to identify replacement properties", "180 days to complete the exchange", "Must use a Qualified Intermediary", "Like-kind property requirements must be met"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+
     longDescription: "A delayed 1031 exchange, also known as a forward or Starker exchange, is the most common form of tax-deferred exchange under IRC Section 1031. In a delayed exchange, the investor sells their relinquished property first and then acquires replacement property within strict IRS timelines. This structure allows Indianapolis real estate investors to defer capital gains taxes while upgrading their investment portfolio. Our qualified intermediary services ensure full compliance with all IRS requirements throughout the exchange process.",
     benefits: [
       "Defer 100% of capital gains taxes on investment property sale",
@@ -60,7 +60,6 @@ const serviceData: Record<string, {
     name: "Reverse Exchange",
     description: "Acquire your replacement property before selling your current property. Ideal when you've found the perfect investment and don't want to risk losing it.",
     details: ["Replacement property acquired first", "Exchange Accommodation Titleholder (EAT) holds property", "Same 45/180 day timelines apply", "More complex but highly effective"],
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
     longDescription: "A reverse 1031 exchange allows Indianapolis investors to acquire replacement property before selling their relinquished property. This strategy is particularly valuable in competitive real estate markets where desirable properties move quickly. An Exchange Accommodation Titleholder (EAT) temporarily holds either the replacement or relinquished property while you complete the exchange. Reverse exchanges provide flexibility and competitive advantage but require careful planning and experienced intermediary services.",
     benefits: [
       "Secure ideal replacement property in competitive Indianapolis market",
@@ -91,7 +90,6 @@ const serviceData: Record<string, {
     name: "Improvement Exchange",
     description: "Also known as a construction or build-to-suit exchange, this allows you to use exchange funds to improve or construct on the replacement property.",
     details: ["Improvements must be completed within 180 days", "Property held by EAT during construction", "Increases property value with deferred taxes", "Complex documentation requirements"],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     longDescription: "An improvement exchange, also called a construction or build-to-suit exchange, allows Indianapolis investors to use tax-deferred exchange funds to improve or construct on replacement property. This strategy enables you to increase property value during the exchange period while maintaining tax deferral benefits. The replacement property is held by an Exchange Accommodation Titleholder while improvements are completed, then transferred to you with increased value.",
     benefits: [
       "Use exchange funds for property improvements",
@@ -122,7 +120,6 @@ const serviceData: Record<string, {
     name: "Build-to-Suit Exchange",
     description: "Custom construction on replacement property to meet your specific investment criteria. Work with developers to create purpose-built assets.",
     details: ["New construction on acquired land", "Tailored to your investment needs", "Maximize depreciation benefits", "Professional project management"],
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80",
     longDescription: "Build-to-suit exchanges allow Indianapolis investors to construct custom commercial or investment properties using tax-deferred 1031 exchange funds. This strategy is ideal for investors who want purpose-built properties tailored to specific tenant needs or investment strategies. By combining land acquisition with new construction, investors can create ideal assets while deferring capital gains taxes. Build-to-suit exchanges require careful planning and coordination with qualified intermediaries, developers, and contractors.",
     benefits: [
       "Create custom property matching investment objectives",
@@ -153,7 +150,6 @@ const serviceData: Record<string, {
     name: "Qualified Intermediary Services",
     description: "We provide secure handling of exchange funds and documentation to ensure full IRS compliance throughout your exchange.",
     details: ["Segregated exchange accounts", "Complete documentation management", "IRS compliance assurance", "Expert guidance throughout process"],
-    image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80",
     longDescription: "A qualified intermediary is required for all 1031 exchanges to maintain tax-deferred status. Our Indianapolis-based qualified intermediary services provide secure handling of exchange funds, comprehensive documentation management, and expert guidance throughout the exchange process. We ensure full IRS compliance while protecting your exchange funds in segregated accounts. Our experienced team has facilitated thousands of successful 1031 exchanges for Indianapolis investors across all property types.",
     benefits: [
       "Secure, segregated exchange fund accounts",
@@ -184,7 +180,6 @@ const serviceData: Record<string, {
     name: "DST Investments",
     description: "Delaware Statutory Trust investments offer passive 1031 exchange opportunities with institutional-quality properties and professional management.",
     details: ["Fractional ownership of large properties", "Professional asset management", "Diversified property portfolios", "Passive income generation"],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
     longDescription: "Delaware Statutory Trust (DST) investments provide Indianapolis 1031 exchange investors with passive ownership in institutional-quality commercial properties. DSTs allow fractional ownership in large assets like office buildings, retail centers, and multifamily properties that would be difficult to acquire individually. Professional asset managers handle all property operations, making DSTs ideal for investors seeking passive income without management responsibilities. DST investments qualify as replacement property for 1031 exchanges.",
     benefits: [
       "Access to institutional-quality commercial properties",
@@ -215,7 +210,6 @@ const serviceData: Record<string, {
     name: "Exchange Consultation",
     description: "Our expert advisors provide comprehensive consultation to help you navigate the complexities of 1031 exchanges and maximize your investment potential.",
     details: ["Personalized exchange strategy", "Tax implication analysis", "Timeline planning", "Ongoing support and guidance"],
-    image: "https://images.unsplash.com/photo-1553484771-371a605b060b?w=1200&q=80",
     longDescription: "Our Indianapolis 1031 exchange consultation services provide investors with expert guidance to maximize tax deferral benefits and investment returns. We analyze your current property portfolio, investment objectives, and tax situation to develop customized exchange strategies. Our experienced advisors help you understand complex IRS regulations, evaluate replacement property options, and structure exchanges for optimal results. Whether you're completing your first 1031 exchange or managing a complex multi-property transaction, our consultation services ensure informed decision-making.",
     benefits: [
       "Personalized exchange strategy development",
@@ -246,7 +240,7 @@ const serviceData: Record<string, {
     name: "Property Identification",
     description: "We help you identify suitable replacement properties within the 45-day identification period, ensuring you find investments that meet your criteria.",
     details: ["Market analysis and research", "Property screening and evaluation", "Due diligence support", "Investment criteria matching"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+
     longDescription: "Property identification is critical to successful 1031 exchanges, with only 45 days to identify potential replacement properties. Our Indianapolis market expertise helps investors efficiently identify properties matching their investment criteria. We provide comprehensive market analysis, property screening, financial analysis, and due diligence support to ensure you identify the right replacement properties within IRS timelines. Our extensive network of property owners, brokers, and developers provides access to both listed and off-market investment opportunities throughout the Indianapolis metropolitan area.",
     benefits: [
       "Expert Indianapolis market knowledge",
@@ -303,7 +297,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: `${service.name} | Indianapolis 1031 Exchange`,
       description: service.description,
       type: "website",
-      images: [service.image],
     },
     alternates: {
       canonical: `https://indy1031exchange.com/services/${slug}`
@@ -317,7 +310,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     name: slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()),
     description: "Expert 1031 exchange services tailored to your investment needs.",
     details: ["Professional guidance", "IRS compliance", "Personalized service", "Expert support"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+
     longDescription: "Expert 1031 exchange services for Indianapolis real estate investors.",
     benefits: ["Tax-deferred exchange", "Professional guidance", "IRS compliance"],
     process: ["Consultation", "Planning", "Execution", "Completion"],
@@ -357,6 +350,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       />
       <Header />
       <main className="pt-20">
+        <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: service.name }]} />
         {/* Hero */}
         <section className="py-24 bg-teal">
           <div className="container text-center">
@@ -373,38 +367,17 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         {/* Content */}
         <section className="py-24 bg-paper">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
-              <div>
-                <h2 className="text-3xl text-heading font-serif italic mb-6">
-                  What is {service.name}?
-                </h2>
-                <p className="text-xl text-ink leading-relaxed mb-8">
-                  {service.description}
+            <div className="max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl text-heading font-serif italic mb-6">
+                What is {service.name}?
+              </h2>
+              <p className="text-xl text-ink leading-relaxed mb-8">
+                {service.description}
+              </p>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-ink leading-relaxed">
+                  {service.longDescription}
                 </p>
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-ink leading-relaxed">
-                    {service.longDescription}
-                  </p>
-                </div>
-              </div>
-              <div className="relative">
-                <div
-                  className="absolute top-0 left-0 right-0 h-16 z-10 pointer-events-none"
-                  style={{
-                    background: "linear-gradient(to bottom, rgba(250,249,246,0.9) 0%, rgba(250,249,246,0.3) 50%, transparent 100%)",
-                    borderRadius: "220px 220px 0 0",
-                  }}
-                />
-                <div
-                  className="relative overflow-hidden"
-                  style={{ borderRadius: "220px 220px 0 0", aspectRatio: "3/4" }}
-                >
-                  <img
-                    src={service.image}
-                    alt={service.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
             </div>
 

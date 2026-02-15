@@ -92,85 +92,73 @@
       "id": "delayed-exchange",
       "label": "Delayed Exchange",
       "description": "The most common 1031 strategy. Sell your property first, then identify and acquire replacement properties within IRS timeframes.",
-      "href": "/services/delayed-exchange",
-      "heroImage": "/services/delayed-exchange-1031-exchange.jpg"
+      "href": "/services/delayed-exchange"
     },
     {
       "id": "reverse-exchange",
       "label": "Reverse Exchange",
       "description": "Acquire your replacement property before selling your current property to secure the perfect investment opportunity.",
-      "href": "/services/reverse-exchange",
-      "heroImage": "/services/reverse-exchange-1031-exchange.jpg"
+      "href": "/services/reverse-exchange"
     },
     {
       "id": "improvement-exchange",
       "label": "Improvement Exchange",
       "description": "Use exchange funds to improve or construct on the replacement property for value-add opportunities.",
-      "href": "/services/improvement-exchange",
-      "heroImage": "/services/improvement-exchange-1031-exchange.jpg"
+      "href": "/services/improvement-exchange"
     },
     {
       "id": "build-to-suit",
       "label": "Build-to-Suit Exchange",
       "description": "Custom construction on replacement property to meet specific investment criteria and maximize returns.",
-      "href": "/services/build-to-suit",
-      "heroImage": "/services/build-to-suit-1031-exchange.jpg"
+      "href": "/services/build-to-suit"
     },
     {
       "id": "consultation",
       "label": "Exchange Consultation",
       "description": "Comprehensive analysis of your investment goals, tax implications, and customized exchange strategies.",
-      "href": "/services/consultation",
-      "heroImage": "/services/consultation-1031-exchange.jpg"
+      "href": "/services/consultation"
     },
     {
       "id": "property-identification",
       "label": "Property Identification",
       "description": "Expert guidance on identifying suitable replacement properties within the 45-day identification period.",
-      "href": "/services/property-identification",
-      "heroImage": "/services/property-identification-1031-exchange.jpg"
+      "href": "/services/property-identification"
     },
     {
       "id": "qualified-intermediary",
       "label": "Qualified Intermediary Services",
       "description": "Secure handling of exchange funds and documentation to ensure IRS compliance.",
-      "href": "/services/qualified-intermediary",
-      "heroImage": "/services/qualified-intermediary-1031-exchange.jpg"
+      "href": "/services/qualified-intermediary"
     },
     {
       "id": "tax-planning",
       "label": "Tax Planning & Strategy",
       "description": "Strategic planning to maximize tax deferral benefits and optimize your investment portfolio.",
-      "href": "/services/tax-planning",
-      "heroImage": "/services/tax-planning-1031-exchange.jpg"
+      "href": "/services/tax-planning"
     },
     {
       "id": "due-diligence",
       "label": "Due Diligence Support",
       "description": "Thorough property analysis, market research, and risk assessment for replacement properties.",
-      "href": "/services/due-diligence",
-      "heroImage": "/services/due-diligence-1031-exchange.jpg"
+      "href": "/services/due-diligence"
     },
     {
       "id": "multi-property",
       "label": "Multi-Property Exchanges",
       "description": "Complex exchanges involving multiple relinquished or replacement properties.",
-      "href": "/services/multi-property",
-      "heroImage": "/services/multi-property-1031-exchange.jpg"
+      "href": "/services/multi-property"
     },
     {
       "id": "partial-exchange",
       "label": "Partial Exchange",
       "description": "Strategic exchanges where you receive some cash (boot) while deferring the majority of gains.",
-      "href": "/services/partial-exchange",
-      "heroImage": "/services/partial-exchange-1031-exchange.jpg"
+      "href": "/services/partial-exchange"
     },
     {
       "id": "dst-investments",
       "label": "DST Investments",
       "description": "Delaware Statutory Trust investments for passive 1031 exchange opportunities.",
-      "href": "/services/dst-investments",
-      "heroImage": "/services/dst-investments-1031-exchange.jpg"
+      "href": "/services/dst-investments"
     }
   ],
   "neighborhoods": [

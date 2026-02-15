@@ -56,7 +56,7 @@ export default function Why1031() {
       className="relative min-h-[550px] flex items-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1569336415962-a4bd9f69c07b?w=1600&q=80')",
+          "url('/neighborhoods/downtown/downtown-in.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -68,11 +69,12 @@ export default function AboutPage() {
       />
       <Header />
       <main className="pt-20">
+        <Breadcrumb items={[{ label: "About" }]} />
         {/* Hero */}
         <section
           className="relative min-h-[500px] flex items-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1600&q=80')",
+            backgroundImage: "url('/neighborhoods/downtown/downtown-in.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

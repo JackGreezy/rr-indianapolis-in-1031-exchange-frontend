@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
@@ -29,7 +30,7 @@ const propertyData: Record<string, {
     name: "NNN Properties",
     description: "Triple Net Lease properties are among the most popular choices for 1031 exchanges. The tenant is responsible for property taxes, insurance, and maintenance, providing predictable income with minimal landlord responsibilities.",
     benefits: ["Passive income stream", "Long-term tenant stability", "Minimal management required", "Predictable cash flow"],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
+    image: "/property-types/nnn/nnn-in.jpg",
     longDescription: "Triple Net Lease (NNN) properties represent one of the most sought-after investment types for 1031 exchanges in Indianapolis. In an NNN lease structure, tenants assume responsibility for property taxes, insurance, and maintenance expenses in addition to base rent. This arrangement creates a truly passive income stream for investors while transferring operational responsibilities to creditworthy tenants. Indianapolis's growing retail and commercial sectors offer excellent opportunities for NNN investments with national credit tenants.",
     marketInsights: [
       "Indianapolis NNN market features strong national tenant presence",
@@ -51,7 +52,7 @@ const propertyData: Record<string, {
     name: "Retail Properties",
     description: "Retail properties range from single-tenant storefronts to large shopping centers. These investments can offer strong returns in high-traffic locations with quality tenants.",
     benefits: ["High visibility locations", "Long-term lease agreements", "Percentage rent opportunities", "Diverse tenant mix options"],
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80",
+    image: "/property-types/retail/retail-in.jpg",
     longDescription: "Indianapolis retail properties present diverse 1031 exchange opportunities ranging from neighborhood shopping centers to single-tenant retail buildings. The Indianapolis retail market benefits from strong demographics, growing population, and strategic location for distribution. Retail investments offer opportunities for both stable income through established tenants and value-add potential through repositioning. Key retail corridors in Carmel, Fishers, and suburban Indianapolis continue to attract quality national and regional retailers.",
     marketInsights: [
       "Indianapolis retail market shows resilience with strong grocery and service tenants",
@@ -73,7 +74,7 @@ const propertyData: Record<string, {
     name: "Office Buildings",
     description: "Office properties provide stable income through multi-year leases with business tenants. Class A and B buildings in prime locations offer excellent 1031 exchange opportunities.",
     benefits: ["Multi-year lease terms", "Professional tenant base", "Value-add opportunities", "Strong appreciation potential"],
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
+    image: "/property-types/office/office-in.jpg",
     longDescription: "Indianapolis office properties offer 1031 exchange investors access to a diverse and evolving market. Downtown Indianapolis features Class A office towers serving Fortune 500 companies and professional services firms. Suburban office markets in Carmel, Fishers, and the northwest corridor provide Class B and flex space opportunities. The Indianapolis office market is adapting to post-pandemic workplace trends, creating opportunities for value-add investors who understand modern workplace requirements.",
     marketInsights: [
       "Downtown Indianapolis maintains strong Class A office demand",
@@ -95,7 +96,7 @@ const propertyData: Record<string, {
     name: "Industrial Properties",
     description: "Industrial real estate, including warehouses and distribution centers, has seen tremendous growth. E-commerce demand continues to drive strong fundamentals in this sector.",
     benefits: ["E-commerce growth driver", "Lower maintenance costs", "Long-term tenants", "Strong market fundamentals"],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
+    image: "/property-types/industrial/industrial-in.webp",
     longDescription: "Indianapolis industrial properties represent one of the strongest 1031 exchange investment opportunities in the current market. Indianapolis's strategic location at the crossroads of America, excellent interstate access, and proximity to major population centers make it a premier distribution and logistics market. The explosive growth of e-commerce has driven unprecedented demand for warehouse and distribution facilities. Indianapolis industrial market features diverse options from small flex warehouses to large distribution centers serving national logistics operations.",
     marketInsights: [
       "Indianapolis ranks among top 10 U.S. logistics markets",
@@ -117,7 +118,7 @@ const propertyData: Record<string, {
     name: "Multifamily Properties",
     description: "Apartment buildings and multifamily complexes offer diversified income streams and strong appreciation potential. This sector remains resilient across economic cycles.",
     benefits: ["Diversified income streams", "Strong rental demand", "Value-add opportunities", "Recession-resilient"],
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80",
+    image: "/property-types/multifamily/multifamily-in.jpg",
     longDescription: "Indianapolis multifamily properties provide 1031 exchange investors with stable, diversified income and strong appreciation potential. The Indianapolis apartment market benefits from population growth, strong employment, and affordable living costs compared to coastal markets. Multifamily investments range from small apartment buildings to large complexes, offering opportunities at various investment levels. The market shows particular strength in Class A suburban properties and value-add Class B/C repositioning opportunities.",
     marketInsights: [
       "Indianapolis multifamily market shows consistent rent growth",
@@ -139,7 +140,7 @@ const propertyData: Record<string, {
     name: "Medical Office Buildings",
     description: "Healthcare real estate offers stable, long-term tenants backed by the growing healthcare industry. Medical office buildings often feature higher-credit tenants and longer leases.",
     benefits: ["Healthcare industry growth", "High-credit tenants", "Extended lease terms", "Specialized tenant base"],
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80",
+    image: "/property-types/medical/medical-in.jpg",
     longDescription: "Medical office buildings (MOB) represent premium 1031 exchange opportunities in Indianapolis. The city's strong healthcare sector, anchored by major health systems including IU Health, Ascension St. Vincent, and Community Health Network, creates sustained demand for medical office space. MOB properties typically feature longer lease terms, higher-credit tenants, and specialized build-outs that create tenant retention. On-campus and near-campus MOB properties command premium valuations due to patient referral patterns.",
     marketInsights: [
       "Indianapolis healthcare sector among largest regional employers",
@@ -161,7 +162,7 @@ const propertyData: Record<string, {
     name: "Hospitality Properties",
     description: "Hotels and hospitality properties can offer significant returns for investors seeking income and appreciation. Brand-affiliated properties often provide additional stability.",
     benefits: ["Revenue upside potential", "Brand recognition value", "Tourism market exposure", "Management flexibility"],
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
+    image: "/property-types/hospitality/hospitality-in.jpg",
     longDescription: "Indianapolis hospitality properties offer unique 1031 exchange opportunities for sophisticated investors. As a major convention and sports destination, Indianapolis features diverse hotel products from limited-service properties to full-service convention hotels. The market benefits from Indianapolis Convention Center, Lucas Oil Stadium, and numerous sporting events and conventions. Hospitality investments can provide operational upside for experienced operators while brand-affiliated properties offer systems and quality standards.",
     marketInsights: [
       "Indianapolis hosts major conventions and sporting events driving demand",
@@ -183,7 +184,7 @@ const propertyData: Record<string, {
     name: "Student Housing",
     description: "Purpose-built student housing near universities offers unique investment opportunities with strong occupancy rates and predictable demand tied to enrollment cycles.",
     benefits: ["Consistent demand cycle", "Premium rental rates", "Parental guarantees", "University proximity value"],
-    image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80",
+    image: "/property-types/multifamily/multifamily-in.jpg",
     longDescription: "Indianapolis student housing investments provide 1031 exchange opportunities tied to major universities including IUPUI, Butler University, and other institutions. Purpose-built student housing features unit configurations and amenity packages designed for student lifestyles, typically commanding premium rents compared to conventional apartments. The sector benefits from consistent demand cycles tied to academic calendars and growing preference for off-campus living. Indianapolis student housing market offers opportunities at various scales from small properties near campuses to large managed communities.",
     marketInsights: [
       "IUPUI and Butler University anchor Indianapolis student housing demand",
@@ -205,7 +206,7 @@ const propertyData: Record<string, {
     name: "Self-Storage Facilities",
     description: "Self-storage has proven to be one of the most resilient asset classes. Low operating costs and diverse revenue streams make these properties attractive for 1031 exchanges.",
     benefits: ["Recession-resistant", "Low operating costs", "Month-to-month flexibility", "Diverse customer base"],
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
+    image: "/property-types/self-storage/self-storage-in.jpg",
     longDescription: "Indianapolis self-storage properties represent recession-resistant 1031 exchange investments with attractive operating characteristics. Self-storage facilities benefit from diverse customer bases including residential users during life transitions and commercial users for inventory and records storage. The asset class features low operating costs, minimal capital expenditures, and month-to-month rental structures providing revenue flexibility. Indianapolis's growing population and housing market create consistent demand for storage solutions.",
     marketInsights: [
       "Indianapolis self-storage market shows consistent demand growth",
@@ -227,7 +228,7 @@ const propertyData: Record<string, {
     name: "Senior Living Facilities",
     description: "With an aging population, senior living and assisted living facilities represent a growing sector with strong demographic tailwinds and increasing demand.",
     benefits: ["Demographic growth trends", "Specialized services premium", "Limited new supply", "Healthcare integration"],
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80",
+    image: "/property-types/medical/medical-in.jpg",
     longDescription: "Indianapolis senior living properties offer 1031 exchange investors access to a growing sector driven by favorable demographics. The aging Baby Boomer generation creates sustained demand for independent living, assisted living, and memory care facilities. Indianapolis's affordable cost of living and strong healthcare infrastructure make it attractive for senior living development and operations. These investments typically feature premium pricing for specialized services and care, though they require experienced operators familiar with healthcare regulations.",
     marketInsights: [
       "Aging Baby Boomer population drives long-term demand growth",
@@ -249,7 +250,7 @@ const propertyData: Record<string, {
     name: "Mixed-Use Developments",
     description: "Mixed-use properties combine retail, office, and residential components. These developments offer diversified income streams and often benefit from urban revitalization.",
     benefits: ["Income diversification", "Urban location premiums", "Live-work-play appeal", "Multiple tenant types"],
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80",
+    image: "/property-types/mixed-use/mixed-use-in.webp",
     longDescription: "Indianapolis mixed-use properties provide 1031 exchange investors with diversified income streams from multiple property types within single developments. Mixed-use developments combine residential, retail, office, and sometimes hospitality uses creating vibrant live-work-play environments. Indianapolis has embraced mixed-use development in areas like downtown, Mass Ave, Fountain Square, and suburban town centers in Carmel and Fishers. These properties benefit from synergies between uses and appeal to tenants seeking walkable, amenity-rich environments.",
     marketInsights: [
       "Downtown Indianapolis and Mass Ave feature successful mixed-use",
@@ -271,7 +272,7 @@ const propertyData: Record<string, {
     name: "Land",
     description: "Raw land and development sites offer unique 1031 exchange opportunities for investors with longer time horizons or specific development plans.",
     benefits: ["Development potential", "No depreciation recapture", "Flexibility of use", "Long-term appreciation"],
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+    image: "/property-types/land/land-in.avif",
     longDescription: "Indianapolis area land represents unique 1031 exchange opportunities for investors with development expertise or long-term appreciation strategies. Raw land and development sites in growing corridors offer potential for significant value creation through entitlement, infrastructure, and development. Indianapolis's expanding suburbs, particularly in Hamilton and Hendricks Counties, feature active land markets serving residential, commercial, and industrial development. Land exchanges require understanding of zoning, utilities, access, and development feasibility.",
     marketInsights: [
       "Hamilton County land markets remain active for residential development",
@@ -333,7 +334,7 @@ export default async function PropertyTypePage({ params }: { params: Promise<{ s
     name: slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()),
     description: "This property type qualifies for 1031 exchanges. Contact us to learn more about opportunities in this sector.",
     benefits: ["Tax-deferred exchange eligible", "Professional guidance available", "Market analysis provided", "Investment strategy support"],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
+    image: "/property-types/office/office-in.jpg",
     longDescription: "Explore 1031 exchange opportunities for this property type in Indianapolis.",
     marketInsights: ["Contact us for detailed market analysis"],
     investmentConsiderations: ["Professional guidance available"],
@@ -365,6 +366,7 @@ export default async function PropertyTypePage({ params }: { params: Promise<{ s
       />
       <Header />
       <main className="pt-20">
+        <Breadcrumb items={[{ label: "Property Types", href: "/property-types" }, { label: property.name }]} />
         {/* Hero */}
         <section className="relative min-h-[500px] flex items-center" style={{ backgroundImage: `url('${property.image}')`, backgroundSize: "cover", backgroundPosition: "center" }}>
           <div className="absolute inset-0 bg-black/50" />

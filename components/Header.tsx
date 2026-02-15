@@ -31,10 +31,10 @@ export default function Header() {
             href="/"
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
           >
-            <span className="block text-2xl md:text-3xl tracking-[0.25em] text-heading font-serif">
+            <span className="block text-lg sm:text-2xl md:text-3xl tracking-[0.15em] sm:tracking-[0.25em] text-heading font-serif">
               INDIANAPOLIS
             </span>
-            <span className="block text-[10px] tracking-[0.4em] text-ink -mt-0.5">
+            <span className="block text-[8px] sm:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-ink -mt-0.5">
               1031 EXCHANGE
             </span>
           </Link>
@@ -104,10 +104,10 @@ export default function Header() {
 
           <nav className="space-y-6">
             {[
-              { href: "#property-types", label: "Property Types" },
-              { href: "#neighborhoods", label: "Neighborhoods" },
-              { href: "#services", label: "Services" },
-              { href: "#about", label: "About Us" },
+              { href: "/property-types", label: "Property Types" },
+              { href: "/neighborhoods", label: "Neighborhoods" },
+              { href: "/services", label: "Services" },
+              { href: "/about", label: "About Us" },
               { href: "/contact", label: "Contact" },
             ].map((item) => (
               <Link

@@ -19,20 +19,17 @@ const topNeighborhoods = [
   {
     id: "meridian-hills",
     name: "Meridian Hills",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    image: "/neighborhoods/meridian-hills/meridian-hills-in.avif",
   },
   {
     id: "geist",
     name: "Geist",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    image: "/neighborhoods/geist/geist-in.jpg",
   },
   {
     id: "carmel",
     name: "Carmel",
-    image:
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+    image: "/neighborhoods/carmel/carmel-in.jpg",
   },
 ];
 

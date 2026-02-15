@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
   return (
@@ -46,11 +47,12 @@ export default function Why1031Page() {
     <>
       <Header />
       <main className="pt-20">
+        <Breadcrumb items={[{ label: "Why 1031 Exchange" }]} />
         {/* Hero */}
         <section
           className="relative min-h-[500px] flex items-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1569336415962-a4bd9f69c07b?w=1600&q=80')",
+            backgroundImage: "url('/neighborhoods/downtown/downtown-in.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

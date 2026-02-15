@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
   return (
@@ -18,18 +19,18 @@ function SparkleIcon({ className = "w-8 h-8" }: { className?: string }) {
 }
 
 const neighborhoods = [
-  { id: "meridian-hills", name: "Meridian Hills", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" },
-  { id: "geist", name: "Geist", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-  { id: "carmel", name: "Carmel", image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" },
-  { id: "zionsville", name: "Zionsville", image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" },
-  { id: "fishers", name: "Fishers", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
-  { id: "noblesville", name: "Noblesville", image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" },
-  { id: "westfield", name: "Westfield", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-  { id: "brownsburg", name: "Brownsburg", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" },
-  { id: "avon", name: "Avon", image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" },
-  { id: "greenwood", name: "Greenwood", image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" },
-  { id: "downtown", name: "Downtown Indianapolis", image: "https://images.unsplash.com/photo-1569336415962-a4bd9f69c07b?w=800&q=80" },
-  { id: "broad-ripple", name: "Broad Ripple", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
+  { id: "meridian-hills", name: "Meridian Hills", image: "/neighborhoods/meridian-hills/meridian-hills-in.avif" },
+  { id: "geist", name: "Geist", image: "/neighborhoods/geist/geist-in.jpg" },
+  { id: "carmel", name: "Carmel", image: "/neighborhoods/carmel/carmel-in.jpg" },
+  { id: "zionsville", name: "Zionsville", image: "/neighborhoods/zionsville/zionsville-in.jpg" },
+  { id: "fishers", name: "Fishers", image: "/neighborhoods/fishers/fishers-in.jpg" },
+  { id: "noblesville", name: "Noblesville", image: "/neighborhoods/noblesville/noblesville-in.jpg" },
+  { id: "westfield", name: "Westfield", image: "/neighborhoods/westfield/westfield-in.webp" },
+  { id: "brownsburg", name: "Brownsburg", image: "/neighborhoods/brownsburg/brownsburg-in.jpeg" },
+  { id: "avon", name: "Avon", image: "/neighborhoods/avon/avon-in.webp" },
+  { id: "greenwood", name: "Greenwood", image: "/neighborhoods/greenwood/greenwood-in.jpg" },
+  { id: "downtown", name: "Downtown Indianapolis", image: "/neighborhoods/downtown/downtown-in.jpg" },
+  { id: "broad-ripple", name: "Broad Ripple", image: "/neighborhoods/broad-ripple/broad-ripple-in.jpeg" },
 ];
 
 export default function NeighborhoodsPage() {
@@ -37,6 +38,7 @@ export default function NeighborhoodsPage() {
     <>
       <Header />
       <main className="pt-20">
+        <Breadcrumb items={[{ label: "Neighborhoods" }]} />
         {/* Hero */}
         <section className="py-24 bg-teal">
           <div className="container text-center">

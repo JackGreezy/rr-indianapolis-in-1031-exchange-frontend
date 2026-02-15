@@ -24,48 +24,36 @@ const services = [
     name: "Delayed Exchange",
     description:
       "The most common 1031 strategy where you sell your relinquished property first, then identify and acquire replacement properties within IRS timeframes.",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
   },
   {
     id: "reverse-exchange",
     name: "Reverse Exchange",
     description:
       "Acquire your replacement property before selling your current property. Ideal when you've found the perfect investment opportunity.",
-    image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
   },
   {
     id: "improvement-exchange",
     name: "Improvement Exchange",
     description:
       "Use exchange funds to improve or construct on the replacement property. Perfect for investors who want to develop or renovate.",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
   },
   {
     id: "build-to-suit",
     name: "Build-to-Suit",
     description:
       "Custom construction on replacement property to meet your specific investment criteria and maximize returns.",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
   },
   {
     id: "qualified-intermediary",
     name: "Qualified Intermediary",
     description:
       "Secure handling of exchange funds and documentation to ensure full IRS compliance throughout your exchange.",
-    image:
-      "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80",
   },
   {
     id: "dst-investments",
     name: "DST Investments",
     description:
       "Delaware Statutory Trust investments for passive 1031 exchange opportunities with institutional-quality properties.",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
   },
 ];
 
@@ -90,46 +78,16 @@ export default function ServicesShowcase() {
       </div>
 
       {/* Service Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Left - Arch Image with Light Gray Background */}
-        <div className="relative bg-gray-light py-16 px-8 lg:px-16 flex items-center justify-center min-h-[500px]">
-          {/* Arch Image */}
-          <div className="relative w-full max-w-sm">
-            {/* Soft gradient fade at top */}
-            <div
-              className="absolute top-0 left-0 right-0 h-16 z-10 pointer-events-none"
-            style={{
-              background:
-                "linear-gradient(to bottom, rgba(229,226,219,0.9) 0%, rgba(229,226,219,0.3) 50%, transparent 100%)",
-              borderRadius: "220px 220px 0 0",
-            }}
-            />
-            <div
-              className="relative overflow-hidden transition-all duration-500"
-              style={{
-                borderRadius: "220px 220px 0 0",
-                aspectRatio: "3/4",
-              }}
-            >
-              <img
-                src={current.image}
-                alt={current.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Right - Teal Content */}
-        <div className="relative bg-teal flex items-center min-h-[500px]">
+      <div className="bg-teal">
+        <div className="relative flex items-center justify-center min-h-[400px]">
           {/* Arrow Button */}
           <button
             onClick={nextSlide}
-            className="absolute left-0 lg:-left-10 top-1/2 -translate-y-1/2 z-20"
+            className="absolute right-4 sm:right-8 lg:right-16 top-1/2 -translate-y-1/2 z-20"
             aria-label="Next service"
           >
             <div
-              className="w-20 h-20 bg-paper flex items-center justify-center hover:bg-white transition-colors shadow-lg"
+              className="w-14 h-14 sm:w-20 sm:h-20 bg-paper flex items-center justify-center hover:bg-white transition-colors shadow-lg"
               style={{
                 borderRadius: "60% 40% 40% 60% / 60% 60% 40% 40%",
               }}
@@ -150,11 +108,11 @@ export default function ServicesShowcase() {
             </div>
           </button>
 
-          <div className="py-16 px-8 lg:px-16 lg:pl-24">
+          <div className="py-12 px-6 pr-20 sm:py-16 sm:px-8 sm:pr-28 lg:px-16 text-center max-w-3xl mx-auto">
             <h3 className="text-4xl lg:text-5xl text-white mb-6 font-serif italic">
               {current.name}
             </h3>
-            <p className="text-white/80 leading-relaxed mb-8 max-w-md text-lg">
+            <p className="text-white/80 leading-relaxed mb-8 text-lg">
               {current.description}
             </p>
             <Link

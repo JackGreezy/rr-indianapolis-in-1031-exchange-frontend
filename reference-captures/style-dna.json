@@ -1,0 +1,754 @@
+{
+  "url": "https://www.compass.com/",
+  "title": "Real Estate, Homes for Sale & Apartments for Rent | Compass",
+  "cssBundleUrls": [
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "https://www.compass.com/ucfe-assets/normalize.css/8/normalize.min.css",
+    "https://www.compass.com/ucfe-assets/fonts/3/fonts.min.css",
+    "https://www.compass.com/ucfe-assets/util-classes.css/2/util-classes.min.css",
+    "https://www.compass.com/ucfe-assets/cx/4/cx.min.css",
+    "inline-style",
+    "inline-style",
+    "https://www.compass.com/ucfe-assets/homepage/homepage-v4.18.5/base.css",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style",
+    "inline-style"
+  ],
+  "fontUrls": [
+    "https://www.compass.com/ucfe-assets/fonts/3/fonts.min.css"
+  ],
+  "dominantColors": [
+    [
+      "rgb(255, 255, 255)",
+      197
+    ],
+    [
+      "rgba(0, 0, 0, 0)",
+      189
+    ],
+    [
+      "rgb(0, 100, 229)",
+      90
+    ],
+    [
+      "rgb(23, 23, 23)",
+      74
+    ],
+    [
+      "rgb(0, 0, 0)",
+      41
+    ],
+    [
+      "rgb(0, 0, 238)",
+      28
+    ],
+    [
+      "rgb(108, 108, 108)",
+      16
+    ],
+    [
+      "rgb(218, 218, 218)",
+      15
+    ],
+    [
+      "rgba(0, 0, 0, 0) rgb(255, 255, 255)",
+      4
+    ],
+    [
+      "rgb(51, 51, 51)",
+      2
+    ],
+    [
+      "rgb(0, 73, 168)",
+      2
+    ],
+    [
+      "rgb(0, 51, 117)",
+      2
+    ],
+    [
+      "rgb(118, 60, 173)",
+      2
+    ],
+    [
+      "rgb(0, 99, 229)",
+      2
+    ],
+    [
+      "rgb(51, 51, 51) rgb(51, 51, 51) rgba(0, 0, 0, 0)",
+      1
+    ],
+    [
+      "rgb(217, 217, 217)",
+      1
+    ]
+  ],
+  "fontFamilies": [
+    [
+      "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      209
+    ],
+    [
+      "\"Open Sans\", Helvetica, Arial, sans-serif",
+      7
+    ],
+    [
+      "\"Compass Sans\", sans-serif",
+      5
+    ],
+    [
+      "\"Compass Serif\", Times, \"Times New Roman\", serif",
+      1
+    ]
+  ],
+  "typography": [
+    {
+      "selector": "body",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "textTransform": "none",
+      "width": 1440,
+      "height": 4366
+    },
+    {
+      "selector": "h1",
+      "fontFamily": "\"Compass Serif\", Times, \"Times New Roman\", serif",
+      "fontSize": "56px",
+      "fontWeight": "700",
+      "lineHeight": "56px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "textTransform": "none",
+      "width": 730,
+      "height": 56
+    },
+    {
+      "selector": "h2",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "500",
+      "lineHeight": "31.2px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "textTransform": "none",
+      "width": 560,
+      "height": 62
+    },
+    null,
+    {
+      "selector": "p",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "textTransform": "none",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "selector": "a",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "textTransform": "none",
+      "width": 152,
+      "height": 47
+    }
+  ],
+  "buttonStyles": [
+    {
+      "text": "Compass",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "padding": "0px 24px 0px 16px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 152,
+      "height": 47
+    },
+    {
+      "text": "Buy",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "borderRadius": "0px",
+      "padding": "0px 10px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 47,
+      "height": 47
+    },
+    {
+      "text": "Rent",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "borderRadius": "0px",
+      "padding": "0px 10px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 53,
+      "height": 47
+    },
+    {
+      "text": "Sell",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "borderRadius": "0px",
+      "padding": "0px 10px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 45,
+      "height": 47
+    },
+    {
+      "text": "Register/Sign In",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "borderRadius": "0px",
+      "padding": "0px 10px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 133,
+      "height": 47
+    },
+    {
+      "text": "Buy",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)",
+      "border": "0px none rgb(0, 0, 0)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 80,
+      "height": 32
+    },
+    {
+      "text": "Rent",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 73, 168)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 80,
+      "height": 32
+    },
+    {
+      "text": "Sell",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 100, 229)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "padding": "6px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 80,
+      "height": 32
+    },
+    {
+      "text": "Unlock 5,240+ more homes you won’t find anywhere else",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 310,
+      "height": 59
+    },
+    {
+      "text": "See Private Exclusives",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(23, 23, 23)",
+      "background": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(218, 218, 218)",
+      "borderRadius": "2px",
+      "padding": "8px 16px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 192,
+      "height": 39
+    },
+    {
+      "text": "View All Compass Exclusives",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 100, 229)",
+      "border": "1px solid rgb(0, 100, 229)",
+      "borderRadius": "2px",
+      "padding": "12px 24px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 289,
+      "height": 47
+    },
+    {
+      "text": "See What I Qualify For",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(255, 255, 255)",
+      "borderRadius": "2px",
+      "padding": "12px 24px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 247,
+      "height": 47
+    },
+    {
+      "text": "¹",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 715,
+      "height": 25
+    },
+    {
+      "text": "Learn More",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(255, 255, 255)",
+      "borderRadius": "2px",
+      "padding": "12px 24px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 165,
+      "height": 47
+    },
+    {
+      "text": "<style> .homepage-featuredGuideImage.lazyload { display: none; } </style> <img c",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 358,
+      "height": 88
+    },
+    {
+      "text": "<style> .homepage-featuredGuideImage.lazyload { display: none; } </style> <img c",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 358,
+      "height": 88
+    },
+    {
+      "text": "<style> .homepage-featuredGuideImage.lazyload { display: none; } </style> <img c",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 358,
+      "height": 88
+    },
+    {
+      "text": "<style> .homepage-featuredGuideImage.lazyload { display: none; } </style> <img c",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 358,
+      "height": 88
+    },
+    {
+      "text": "<style> .homepage-featuredGuideImage.lazyload { display: none; } </style> <img c",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 358,
+      "height": 88
+    },
+    {
+      "text": "<style> .homepage-featuredGuideImage.lazyload { display: none; } </style> <img c",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 238)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 358,
+      "height": 88
+    },
+    {
+      "text": "View More Neighborhoods",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 100, 229)",
+      "border": "1px solid rgb(0, 100, 229)",
+      "borderRadius": "2px",
+      "padding": "12px 24px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 275,
+      "height": 47
+    },
+    {
+      "text": "Privacy Center",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 506,
+      "height": 43
+    },
+    {
+      "text": "California COVID-19 Rules of Entry",
+      "fontFamily": "\"Compass Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "width": 542,
+      "height": 43
+    }
+  ],
+  "spacingRhythm": [
+    {
+      "index": 0,
+      "tag": "section",
+      "className": "homepage-hero cx-mainLayout-fullWidth",
+      "top": 0,
+      "height": 600,
+      "background": "rgb(51, 51, 51)",
+      "display": "flex",
+      "position": "relative"
+    },
+    {
+      "index": 1,
+      "tag": "section",
+      "className": "homepage-section homepage-listingSection",
+      "top": 664,
+      "height": 834,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "className": "homepage-sectionWrapper",
+      "top": 664,
+      "height": 834,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "className": "textIntent-title1 homepage-sectionHeader",
+      "top": 664,
+      "height": 42,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 4,
+      "tag": "div",
+      "className": "homepage-sectionDescription",
+      "top": 706,
+      "height": 24,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 5,
+      "tag": "section",
+      "className": "homepage-section-small-top-padding mortgage",
+      "top": 1522,
+      "height": 159,
+      "background": "rgb(0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "className": "homepage-section-small-top-padding",
+      "top": 1705,
+      "height": 389,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 7,
+      "tag": "h2",
+      "className": "textIntent-title1 homepage-sectionHeader",
+      "top": 1775,
+      "height": 42,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 8,
+      "tag": "section",
+      "className": "homepage-section",
+      "top": 2159,
+      "height": 360,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 9,
+      "tag": "div",
+      "className": "homepage-sectionWrapper",
+      "top": 2159,
+      "height": 360,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 10,
+      "tag": "div",
+      "className": "textIntent-title1 homepage-sectionHeader",
+      "top": 2159,
+      "height": 42,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "className": "homepage-section",
+      "top": 2583,
+      "height": 670,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 12,
+      "tag": "div",
+      "className": "homepage-sectionWrapper",
+      "top": 2598,
+      "height": 639,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 13,
+      "tag": "h2",
+      "className": "textIntent-title2 internalLinks-sectionHeader",
+      "top": 2598,
+      "height": 23,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 14,
+      "tag": "h2",
+      "className": "textIntent-title2 internalLinks-sectionHeader",
+      "top": 2950,
+      "height": 23,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 15,
+      "tag": "section",
+      "className": "consumerFooter-column consumerFooter-column--company",
+      "top": 3381,
+      "height": 921,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 16,
+      "tag": "section",
+      "className": "consumerFooter-column consumerFooter-column--explore",
+      "top": 3381,
+      "height": 921,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    },
+    {
+      "index": 17,
+      "tag": "section",
+      "className": "consumerFooter-column consumerFooter-column--mobile",
+      "top": 3381,
+      "height": 178,
+      "background": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "position": "static"
+    }
+  ],
+  "header": {
+    "height": 0,
+    "width": 1440,
+    "position": "static"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1200
+  },
+  "scrollHeight": 4366
+}

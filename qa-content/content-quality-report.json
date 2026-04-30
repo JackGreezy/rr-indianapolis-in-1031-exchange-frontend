@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-04-30T11:24:33.801Z",
+  "pageCount": 47,
+  "serviceCount": 25,
+  "locationCount": 22,
+  "minWords": 1294,
+  "maxSimilarity": {
+    "a": "market-comparable-analysis",
+    "b": "exchange-documentation-assembly",
+    "score": 0.5963029218843172
+  },
+  "failingWordCount": []
+}

@@ -1,0 +1,21 @@
+{
+  "base": "http://localhost:4311",
+  "generatedAt": "2026-04-30T11:21:53.984Z",
+  "consoleErrors": [],
+  "mobileOverflow": {
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false
+  },
+  "labelCheck": {
+    "Full Name *": true,
+    "Phone Number *": true,
+    "Email Address *": true,
+    "Property Address *": true,
+    "Service Type *": true,
+    "Project Timeline": true,
+    "Project Details": true
+  },
+  "failingLinks": [],
+  "checkedLinks": 43
+}

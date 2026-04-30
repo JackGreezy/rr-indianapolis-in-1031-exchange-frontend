@@ -1,0 +1,58 @@
+IMAGE REQUIREMENTS - 1031 Exchange Indianapolis
+
+Visual reference: Compass homepage architecture with a full-width hero image, listing-style cards, black CTA bands, split media/content modules, neighborhood tiles, and a large black footer. Do not use Compass images or inherited scaffold media.
+
+1. home-hero-indianapolis-exchange.jpg
+Usage: Homepage hero background.
+Orientation and dimensions: Landscape, 1600x720 minimum.
+Art direction: Indianapolis-area residential/commercial property at dusk, refined real estate tone, room for centered white serif headline and search panel overlay.
+
+2. exchange-priority-industrial.jpg
+Usage: Homepage listing card and services index feature card.
+Orientation and dimensions: Landscape, 640x410.
+Art direction: Clean Central Indiana logistics or flex-industrial exterior, no visible brand names, bright daylight.
+
+3. exchange-priority-multifamily.jpg
+Usage: Homepage listing card for multifamily replacement sourcing.
+Orientation and dimensions: Landscape, 640x410.
+Art direction: Modern apartment or mixed-use residential facade, neutral palette, Indianapolis-compatible streetscape.
+
+4. exchange-priority-retail.jpg
+Usage: Homepage listing card for retail replacement sourcing.
+Orientation and dimensions: Landscape, 640x410.
+Art direction: Service retail center or single-tenant retail pad with parking and strong visibility.
+
+5. exchange-priority-office-medical.jpg
+Usage: Homepage listing card for industrial/medical/office comparison modules.
+Orientation and dimensions: Landscape, 640x410.
+Art direction: Suburban medical office or professional office exterior, clean and stable, no logos.
+
+6. service-detail-template.jpg
+Usage: Optional top visual for service detail pages if photography is added later.
+Orientation and dimensions: Landscape, 1440x620.
+Art direction: Documents, closing table, Indianapolis map, or neutral property exterior depending on service. Avoid tax/legal guarantee imagery.
+
+7. locations-index-market-map.jpg
+Usage: Locations index hero or card background.
+Orientation and dimensions: Landscape, 1200x760.
+Art direction: Abstract Central Indiana route map or aerial-style market texture showing connected corridors without copying map providers.
+
+8. location-detail-template.jpg
+Usage: Optional visual for location detail pages.
+Orientation and dimensions: Landscape, 1440x620.
+Art direction: Market-specific property/corridor scene for each location, no trademarks or identifiable private business signage.
+
+9. about-coordination-workflow.jpg
+Usage: About page secondary image.
+Orientation and dimensions: Landscape, 1000x760.
+Art direction: Organized exchange documentation, market map, and advisory workflow; professional but not legal-office cliche.
+
+10. contact-office-context.jpg
+Usage: Contact page support visual.
+Orientation and dimensions: Landscape, 1000x760.
+Art direction: Downtown Indianapolis office context near Market Street, understated, no false team or award imagery.
+
+11. footer-map-context.jpg
+Usage: Footer/map context fallback image if map embed is not used.
+Orientation and dimensions: Landscape, 900x500.
+Art direction: Abstract street-grid context around 10 W Market St, Indianapolis.

@@ -63,8 +63,6 @@ type BrandData = {
   brand_gold?: string;
   supportPhone?: string;
   service_area?: string;
-  portfolio_url?: string;
-  portfolio_blurb?: string;
   intro_copy?: string;
 };
 

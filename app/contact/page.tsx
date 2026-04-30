@@ -1,25 +1,21 @@
-import { ContactFormWrapper } from "./contact-form";
+import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import { site } from "@/lib/site-data";
+import ContactFormDynamic from "./contact-form-dynamic";
 
-export const metadata = {
-  title: "Contact Us | 1031 Exchange",
-  description: "Contact our 1031 exchange team to discuss your replacement property identification needs.",
-};
+export const metadata: Metadata = { title: "Contact", description: "Contact 1031 Exchange Indianapolis for replacement property identification, exchange deadline coordination, and documentation support.", alternates: { canonical: `${site.siteUrl}/contact` } };
 
 export default function ContactPage() {
   return (
-    <main className="bg-brand-dark text-white">
-      <div className="mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
-        <div className="mb-16 text-center">
-          <span className="subheading mb-4 block">Get In Touch</span>
-          <h1 className="heading-display text-white">
-            Contact Us
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
-            Ready to start your 1031 exchange? Our team specializes in connecting investors with compliant replacement properties.
-          </p>
-        </div>
-        <ContactFormWrapper />
-      </div>
-    </main>
+    <>
+      <Header />
+      <main className="interior-main">
+        <Breadcrumb items={[{ label: "Contact" }]} />
+        <section className="contact-layout"><div><p className="eyebrow">Start the exchange conversation</p><h1>Bring the sale facts, deadline pressure, and replacement property questions into one plan.</h1><p>Use the form to share the property address, service need, and timeline. The form keeps payload keys stable for name, phone, email, property, projectType, timeline, details, and Turnstile token validation.</p><div className="contact-card"><strong>Email</strong><a href={`mailto:${site.email}`}>{site.email}</a></div><div className="contact-card"><strong>Office context</strong><span>{site.address.full}</span></div></div><ContactFormDynamic /></section>
+      </main>
+      <Footer />
+    </>
   );
 }

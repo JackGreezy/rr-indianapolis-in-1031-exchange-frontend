@@ -1,127 +1,52 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-sans",
-  display: "swap",
-});
+import { site } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://indy1031exchange.com"),
+  metadataBase: new URL(site.siteUrl),
   title: {
-    default: "Indianapolis 1031 Exchange | Tax-Deferred Real Estate Investment",
-    template: "%s | Indianapolis 1031 Exchange"
+    default: `${site.brandName} | Indianapolis 1031 Exchange Services`,
+    template: `%s | ${site.brandName}`,
   },
-  description:
-    "Expert 1031 exchange services in Indianapolis, Indiana. Defer capital gains taxes on NNN properties, retail, and commercial real estate investments. Trusted advisors with decades of experience.",
-  keywords: [
-    "1031 exchange Indianapolis",
-    "tax deferred exchange Indiana",
-    "NNN properties Indianapolis",
-    "commercial real estate 1031",
-    "retail property exchange",
-    "like-kind exchange Indianapolis",
-    "qualified intermediary Indiana",
-    "investment property Indianapolis",
-    "capital gains deferral",
-    "real estate tax strategy",
-  ],
-  authors: [{ name: "Indianapolis 1031 Exchange" }],
-  creator: "Indianapolis 1031 Exchange",
-  publisher: "Indianapolis 1031 Exchange",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+  description: "Indianapolis 1031 exchange support for replacement property identification, deadline strategy, QI coordination, and advisor-ready documentation.",
+  alternates: { canonical: site.siteUrl },
   openGraph: {
-    title: "Indianapolis 1031 Exchange | Tax-Deferred Real Estate Investment",
-    description:
-      "Expert 1031 exchange services in Indianapolis. Defer capital gains taxes on commercial, retail, and NNN property investments.",
-    type: "website",
+    title: `${site.brandName} | Indianapolis 1031 Exchange Services`,
+    description: "Replacement property identification and exchange coordination for Indianapolis investors.",
+    url: site.siteUrl,
+    siteName: site.brandName,
     locale: "en_US",
-    url: "https://indy1031exchange.com",
-    siteName: "Indianapolis 1031 Exchange",
+    type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Indianapolis 1031 Exchange | Tax-Deferred Real Estate Investment",
-    description: "Expert 1031 exchange services in Indianapolis. Defer capital gains taxes on commercial real estate.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  verification: {
-    google: "verification_token",
-  },
+  robots: { index: true, follow: true },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const organizationSchema = {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Indianapolis 1031 Exchange",
-    "url": "https://indy1031exchange.com",
-    "logo": "https://indy1031exchange.com/logo.png",
-    "description": "Expert 1031 exchange services in Indianapolis, Indiana",
-    "address": {
+    "@type": "ProfessionalService",
+    name: site.brandName,
+    url: site.siteUrl,
+    email: site.email,
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "100 Monument Circle, Suite 500",
-      "addressLocality": "Indianapolis",
-      "addressRegion": "IN",
-      "postalCode": "46204",
-      "addressCountry": "US"
+      streetAddress: site.address.street,
+      addressLocality: site.address.city,
+      addressRegion: site.address.state,
+      postalCode: site.address.zip,
+      addressCountry: "US",
     },
-    "telephone": "(317) 555-1031",
-    "email": "info@indy1031exchange.com",
-    "sameAs": [],
-    "areaServed": {
-      "@type": "State",
-      "name": "Indiana"
-    },
-    "knowsAbout": [
-      "1031 Exchange",
-      "Tax Deferred Exchange",
-      "Commercial Real Estate",
-      "Investment Property",
-      "Like-Kind Exchange"
-    ]
+    geo: { "@type": "GeoCoordinates", latitude: site.geo.latitude, longitude: site.geo.longitude },
+    areaServed: ["Indianapolis", "Central Indiana", "Marion County", "Hamilton County", "Hendricks County", "Johnson County"],
+    knowsAbout: ["1031 exchange", "replacement property identification", "qualified intermediary coordination", "DST placement", "like-kind real estate"],
   };
 
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <head>
-        <link rel="canonical" href="https://indy1031exchange.com" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </head>
-      <body className="antialiased">{children}</body>
+    <html lang="en">
+      <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        {children}
+      </body>
     </html>
   );
 }
-
